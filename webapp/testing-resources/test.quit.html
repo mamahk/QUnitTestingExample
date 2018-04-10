@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<base href="../../../../../../">
+		<title>QUnitTesting</title>
+
+		<script id="sap-ui-bootstrap"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"sap.training.qunittestQUnitTesting": ""}'>
+		</script>
+		<script src="./webapp/util/prettydate.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="resources/sap/ui/thirdparty/qunit.js"></script>
+		<script type="text/javascript" src="resources/sap/ui/qunit/qunit-junit.js"></script>
+		<script type="text/javascript" src="resources/sap/ui/qunit/QUnitUtils.js"></script>
+
+		
+		<script>
+			QUnit.test("prettydate basics",
+				function( assert ) {
+					var now = "2008/01/28 22:25:00";
+					assert.equal(prettyDate(now, "2008/01/28 22:25:00"), "just now");
+					assert.equal(prettyDate(now, "2008/01/28 22:24:00"), "1 minute ago");
+					assert.equal(prettyDate(now, "2008/01/28 21:25:00"), "1 hour ago");
+					assert.equal(prettyDate(now, "2008/01/27 22:25:00"), "Yesterday");
+					assert.equal(prettyDate(now, "2008/01/26 22:25:00"), " 2 days ago");
+					assert.equal(prettyDate(now, "2007/01/26 22:25:00"), undefined);
+			});
+		</script>
+
+	</head>
+	
+	<body class="sapUiBody" id="content">
+		<div id="qunit"></div>
+		<div id="myContent"></div>
+	</body>
+
+</html>

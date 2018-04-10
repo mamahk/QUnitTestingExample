@@ -1,0 +1,39 @@
+{
+  "run": [
+    {
+      "filePath": "/webapp/testing-resources/test.quit.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [],
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "qunitrunner",
+        "id": 2904278,
+        "displayName": "Run test.quit.html",
+        "lastRunTimeStamp": 1523340777869
+      }
+    },
+    {
+      "filePath": "/webapp/index.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 503707,
+        "displayName": "Run index.html",
+        "lastRunTimeStamp": 1523340655485
+      }
+    }
+  ]
+}
